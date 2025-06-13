@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Prompt:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #23272e 0%, #444 100%);
+    font-family: 'Prompt', 'Kanit', sans-serif;
+    color: #f9f9f9;
+    min-height: 100vh;
+}
+header {
+    background: #181c1f;
+    padding: 0;
+    box-shadow: 0 2px 12px #0008;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    color: #f9d423;
+    padding: 18px 32px;
+    letter-spacing: 2px;
+}
+nav {
+    display: flex;
+    gap: 24px;
+    margin-right: 32px;
+}
+nav a {
+    color: #fffbe6;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+nav a:hover, nav a.active {
+    background: #f9d423;
+    color: #23272e;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0 24px 0;
+    background: linear-gradient(120deg, #23272e 60%, #444 100%);
+}
+.hero-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px #000a;
+    margin-right: 40px;
+    background: #fff;
+}
+.hero-content {
+    max-width: 400px;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #f9d423;
+    margin-bottom: 12px;
+    font-family: 'Kanit', sans-serif;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    color: #fffbe6;
+    margin-bottom: 18px;
+}
+.contact {
+    margin: 18px 0;
+}
+.contact a, .contact span {
+    color: #ff4e50;
+    font-weight: bold;
+    margin-right: 18px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+section {
+    max-width: 900px;
+    margin: 36px auto;
+    background: #23272e;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px #0006;
+    padding: 32px 28px;
+}
+section h2 {
+    color: #f9d423;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-family: 'Kanit', sans-serif;
+}
+.dog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.dog-card {
+    background: #181c1f;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #0007;
+    width: 220px;
+    padding: 18px;
+    text-align: center;
+    color: #fffbe6;
+    transition: transform 0.2s;
+}
+.dog-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px #f9d42355;
+}
+.dog-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.dog-card .price {
+    color: #f9d423;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.review-card {
+    background: #181c1f;
+    border-radius: 16px;
+    padding: 16px;
+    width: 220px;
+    color: #fffbe6;
+    box-shadow: 0 2px 12px #0007;
+    font-size: 1rem;
+}
+.review-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #f9d423;
+}
+.map {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 12px;
+    box-shadow: 0 2px 12px #0007;
+}
+.knowledge-list {
+    margin-left: 18px;
+    color: #fffbe6;
+    font-size: 1.1rem;
+}
+footer {
+    text-align: center;
+    color: #fffbe6;
+    background: #181c1f;
+    padding: 18px 0 8px 0;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+@media (max-width: 900px) {
+    .hero { flex-direction: column; }
+    .hero-img { margin: 0 0 24px 0; }
+    section { padding: 18px 6px; }
+    .dog-list, .review-list { flex-direction: column; align-items: center; }
+}
